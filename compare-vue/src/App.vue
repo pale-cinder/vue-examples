@@ -50,8 +50,9 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
+          <a class="button is-primary is-outlined">
+            <i class="fa fa-download"></i>
+            <strong>Join</strong>
           </a>
           <a class="button is-light">
             Log in
