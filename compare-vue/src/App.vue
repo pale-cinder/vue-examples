@@ -1,39 +1,66 @@
 <template>
 
   <div id="app">
-    <div class="nav has-shadow">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item">MyCompany</a>
-        </div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://google.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Circle_%28transparent%29.png" width="112" height="28">
+    </a>
 
-        <span class="nav-toggle>
-          <span></span>
-          <span></span>
-          <span>
-        </span>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-        <div class="nav-right nav-menu">
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
 
-        <router-link to="/" class="nav-item r-item">Home</router-link>
-        <router-link to="/" class="nav-item r-item">About</router-link>
-        <router-link to="/" class="nav-item r-item">Features</router-link>
-        <router-link to="/" class="nav-item r-item">FAQ</router-link>
+      <a class="navbar-item">
+        Example
+      </a>
 
-      <div class="nav-item">
-          <p class="control">
-            <a class="button is-primary is-outlined">
-              <span class="icon">
-                <i class="fa fa-download"></i>
-              </span>
-              <span>Join Now</span>
-            </a>
-          </p>
-        </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Information
+        </a>
 
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Team
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
         </div>
       </div>
     </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
   <router-view></router-view>
 </div>
 </template>
