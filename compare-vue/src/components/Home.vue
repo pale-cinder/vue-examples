@@ -59,6 +59,7 @@
   </div>
 
 </section>
+
   </div>
 </template>
 
@@ -78,5 +79,29 @@ export default {
 <style lang="sass" scoped>
 
 @import '../mq'
+
+.hero
+  background: url('../assets/picture.jpg')
+  background-size: cover
+
+  .title
+    mobile
+      color: #00d1b2
+      font-weight: bold
+    tablet
+      color: #00d1b2
+      font-size: 2.5rem
+    desktop
+      color: #00d1b2
+      font-size: 4rem
+      marging-top: 2.5rem
+
+    h2
+    color: #00d1b2
+    marging: 1.5rem 0 2rem 0 !important
+
+    .fa-cog
+      font-size: 40px
+      
 
 </style>
